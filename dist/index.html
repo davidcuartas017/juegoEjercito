@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Video game quiz with pure CSS illustrations by various Codepen users</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<svg version='1.1' xmlns='http://www.w3.org/2000/svg'>
+  <defs>
+    <filter id='squiggly-0'>
+      <feturbulence basefrequency='0.06' id='turbulence' numoctaves='3' result='noise' seed='0'></feturbulence>
+      <fedisplacementmap id='displacement' in2='noise' in='SourceGraphic' scale='6'></fedisplacementmap>
+    </filter>
+    <filter id='squiggly-1'>
+      <feturbulence basefrequency='0.06' id='turbulence' numoctaves='3' result='noise' seed='1'></feturbulence>
+      <fedisplacementmap in2='noise' in='SourceGraphic' scale='8'></fedisplacementmap>
+    </filter>
+    <filter id='squiggly-2'>
+      <feturbulence basefrequency='0.06' id='turbulence' numoctaves='3' result='noise' seed='2'></feturbulence>
+      <fedisplacementmap in2='noise' in='SourceGraphic' scale='6'></fedisplacementmap>
+    </filter>
+    <filter id='squiggly-3'>
+      <feturbulence basefrequency='0.06' id='turbulence' numoctaves='3' result='noise' seed='3'></feturbulence>
+      <fedisplacementmap in2='noise' in='SourceGraphic' scale='8'></fedisplacementmap>
+    </filter>
+    <filter id='squiggly-4'>
+      <feturbulence basefrequency='0.06' id='turbulence' numoctaves='3' result='noise' seed='4'></feturbulence>
+      <fedisplacementmap in2='noise' in='SourceGraphic' scale='6'></fedisplacementmap>
+    </filter>
+  </defs>
+</svg>
+<div class='overlay'></div>
+<div class='options'>
+  <div class='options_sf'>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/sfIcon2.png'>
+
+  </div>
+  <div class='options_bg'>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/bgIcon2.png'>
+
+  </div>
+</div>
+<div class='main'>
+  <div class='main_inner'>
+    <div class='main_inner__loading'>
+      <div class='bg'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mars_sunburst.png'>
+      </div>
+      <div class='loader'>
+        <div class='text'>
+          <span>Juego</span>
+          
+          <div class='s'>
+            <span>Quiz</span>
+            <span>Ejercito</span>
+
+          </div>
+        </div>
+        <p>
+          <button>Click para jugar</button>
+        </p>
+      </div>
+    </div>
+    <div class='main_inner__modalOverlay'></div>
+    <div class='main_inner__modal'></div>
+    <div class='main_inner__modalContent'>
+      <h1>Quiz completo!</h1>
+      <p class='score'>You got 7 out of 8 correct!</p>
+      <p>Estudiante inicial:</p>
+      <a href='https://www.facebook.com/david.cuartas.18' target='_blank'>David Cuartas</a>
+
+      <button class='share'>Tweet tu puntaje</button>
+      <button class='share1'>Volver a jugar</button>
+
+    </div>
+    <div class='main_inner__logo'>
+      <a href=''>
+        <img style="float: left;" src='img/logo.png'>
+      </a>
+    </div>
+    <div class='main_inner__title'>
+      <h1>Preguntas</h1>
+      <div class='hint'></div>
+    </div>
+    <div class='main_inner__circle'></div>
+    <div class='main_inner__feedback'></div>
+    <div class='main_inner__scenes'>
+      <div class='scene akuaku'>
+        
+          <img src="img/oficiales.png">
+        
+      </div>
+      <div class='scene kirby'>
+          <img src="img/suboficial.png">
+
+      </div>
+      <div class='scene hexipal'>
+        <div>
+          <ul style="text-align: justify;">
+              <li>Himno del Ejército Nacional de Colombia.</li><br>
+              <li>Himno Nacional de Colombia.</li><br>
+              <li>Himno al arma.</li>
+            </ul>
+          </div>
+      </div>
+      <div class='scene moogle'>
+        <img src="img/comunicaciones_militares.png">
+
+      </div>
+      <div class='scene mario'>
+        <img src="img/pregunta.png">
+
+      </div>
+
+      <div class='scene buster'>
+        <h2 style="color:white;">“sin más política es, el mundo que nadie espera”</h2>
+      </div>
+
+      <div class='scene buster1'>
+        <img src="img/pregunta.png">
+
+      </div>
+
+      <div class='scene buster2'>
+        <img src="img/pregunta.png">
+
+      </div>
+
+      <div class='scene buster3'>
+        <img src="img/pregunta.png">
+
+      </div>
+
+      <div class='scene buster4'>
+        <img src="img/pregunta.png">
+
+      </div>
+
+      <div class='scene buster5'>
+        <img src="img/pregunta.png">
+
+      </div>
+
+      <div class='scene buster6'>
+        <img src="img/pregunta.png">
+
+      </div>
+
+      <div class='scene buster8'>
+        <p>En la escuela militar de suboficiales recién ingresado como alumno de primer nivel, debe cumplir parámetros, reglas y comportamientos que la institución exige, por lo tanto …</p>
+      </div>
+      <div class='scene buster9'>
+
+        <p>En la escuela militar de suboficiales recién ingresado como alumno de primer nivel debe cumplir parámetros, reglas y comportamientos que la institución lo exige por lo tanto…</p>
+      </div>
+      <div class='scene buster10'>
+        <p>En la escuela militar de suboficiales recién ingresado como alumno de primer nivel debe cumplir parámetros, reglas y comportamientos que la institución lo exige por lo tanto…</p>
+
+      </div>
+      <div class='scene buster11'>
+        <p>En la escuela militar de suboficiales recién ingresado como alumno de primer nivel debe cumplir parámetros, reglas y comportamientos que la institución lo exige por lo tanto…</p>
+
+      </div>
+      <div class='scene buster12'>
+        <p>En la escuela militar de suboficiales recién ingresado como alumno de primer nivel debe cumplir parámetros, reglas y comportamientos que la institución lo exige por lo tanto…</p>
+
+      </div>
+      <div class='scene buster13'>
+        <img src="img/pregunta.png">
+
+      </div>
+      <div class='scene buster14'>
+        <img src="img/pregunta.png">
+
+      </div>
+      <div class='scene buster15'>
+        <p>El cabo tercero Sánchez Trujillo David Andrés, tuvo su ceremonia de ascenso el día 23 de marzo del 2018; por otro lado, el cabo tercero Flores Cazallas Hernán Darío tuvo la ceremonia de ascenso el día 23 de marzo del 2019. De acuerdo a lo anterior </p>
+      </div>
+      <div class='scene buster16'>
+        <img src="img/pregunta.png">
+
+      </div>
+
+
+      </div>
+    </div>
+  
+    <div class='main_inner__answers'>
+      <div class='answer'></div>
+      <div class='answer'></div>
+      <div class='answer'></div>
+    </div>
+    <div class='main_inner__breadcrumbs'></div>
+  </div>
+</div>
+<canvas class='grain'></canvas>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
